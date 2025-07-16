@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* 共通 */
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* main */
+
+.wrapper img {
+    width: 500px;
+}
+
+/* footer */
+
+footer {
+    background: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.insta-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.insta-link:hover {
+    color: #e4405f;
+
+}
+
+.insta-link img {
+    width: 24px;
+    height: 24px;
+}
