@@ -22,36 +22,41 @@
                     <li class="header-nav-item"><a href="#">お知らせ</a></li>
                     <li class="header-nav-item"><a href="#">インフォメーション</a></li>
                     <li class="header-nav-item"><a href="#">かかしさん・いるかさんへ</a></li>
-                    <li class="header-nav-item"><a href="#">かかしさん・いるかさんへ</a></li>
-                    <li class="header-nav-item"><a href="#">かかしさん・いるかさんへ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="mv">
-            <div class="img-item">
-                <img src="img/image_12.png" alt="" />
-            </div>
-            <div class="img-item">
-                <img src="img/image_23.png" alt="" />
-            </div>
-            <div class="img-item">
-                <img src="img/image_39.png" alt="" />
-            </div>
-            <div class="img-item">
-                <img src="img/image_40.png" alt="" />
-            </div>
-        </div>
+        <section class="metaleaf">
+            <h2 class="main-title">Meta<span>Leaf</span>
+                <br>メタリーフの世界へようこそ
+            </h2>
 
-        <div class="wrapper top-heading">
-            <h2>メタリーフの世界へようこそ</h2>
-            <h3>一緒に新しい体験を</h3>
-            <div class="main-img">
-                <img src="img/image_39.png" alt="">
+            <div class="main-info">
+                <div class="info-title">
+                    <h2>リアルより<br><span>ワクワク</span>する体験を</h2>
+
+                    <p>メタリーフはどんな場所？</p>
+                    <p>そんな疑問をスクロールして見よう！！</p>
+                </div>
+
+                <div class="mv">
+                    <div class="img-item">
+                        <img src="img/image_9.png" alt="" />
+                    </div>
+                    <div class="img-item">
+                        <img src="img/image_23.png" alt="" />
+                    </div>
+                    <div class="img-item">
+                        <img src="img/image_29.png" alt="" />
+                    </div>
+                    <div class="img-item">
+                        <img src="img/image_36.png" alt="" />
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
         <section class="metaleaf-feature">
             <!-- feature=特徴の意味 -->
@@ -144,23 +149,36 @@
                 </li>
             </ul>
         </section>
+
     </main>
 
     <footer>
-            <img src="img/image_2.png" alt="">
-            <img src="img/image_1.png" alt="">
-            <p>テキストテキスト</p>
-            <p>テキストテキスト</p>
+        <img src="img/image_2.png" alt="">
+        <img src="img/image_1.png" alt="">
+        <p>テキストテキスト</p>
+        <p>テキストテキスト</p>
 
-            <a class="insta-link" href="https://www.instagram.com/iruka.freelance/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon">
-                @iruka.freelance
-            </a>
-            <a class="insta-link" href="https://www.instagram.com/kakashi.programming.lab/">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon">
-                @kakashi.programming.lab
-            </a>
+        <a class="insta-link" href="https://www.instagram.com/iruka.freelance/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon">
+            @iruka.freelance
+        </a>
+        <a class="insta-link" href="https://www.instagram.com/kakashi.programming.lab/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon">
+            @kakashi.programming.lab
+        </a>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: "100px", 
+            duration: 2000, 
+            delay: 200 
+        });
+        ScrollReveal().reveal('.main-title', { delay: 200, origin: 'left' });
+        ScrollReveal().reveal('.info-title', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('.mv', { delay: 700, origin: 'rigth' });
+    </script>
 </body>
 
 </html>

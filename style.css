@@ -27,8 +27,13 @@ li {
 /* header */
 header{
     max-width: 100%;
-    height: 100px;
+    width: 100%;
+    height: 90px;
     background: #333;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
 }
 
 .header-logo{
@@ -38,7 +43,8 @@ header{
 }
 
 .header-title img{
-    width: 50%;
+    width: 100%;
+    height: 50px;
     padding-left: 10px;
     object-fit: cover;
 }
@@ -55,13 +61,50 @@ header{
 }
 
 /* main */
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.metaleaf{
+    margin-top: 300px;
+}
+
+.main-title{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 4rem;
+}
+
+.main-title span{
+    color: green;
+}
+
+.main-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 300px;
+}
+
+.info-title{
+    width: 40%;
+    margin-block: auto;
+    margin-left: 100px;
+}
+
+.img-item{
+    width: 40%;
+}
+
 .mv{
     width: 100%;
     max-width: 100%;
-    height: 100vh;
+    height: 80vh;
     max-height: 100%;
     box-sizing: border-box;
     position: relative;
+    margin-top: 80px;
+    margin-inline: 50px;
 }
 
 .img-item{
@@ -90,6 +133,7 @@ header{
 .img-item img{
     width: 100%;
     height: 100%;
+    border-radius: 10%;
     object-fit: cover;
 }
 @keyframes img-change{
