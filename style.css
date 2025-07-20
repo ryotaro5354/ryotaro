@@ -22,40 +22,46 @@ li {
 .wrapper {
     max-width: 1300px;
     margin: 0 auto;
+    border: 2px solid;
 }
 
-/* header */
-header{
+
+/*-------------------------------------------
+header
+--------------------------------------------- */
+header {
     max-width: 100%;
     height: 100px;
     background: #333;
 }
 
-.header-logo{
+.header-logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-title img{
+.header-title img {
     width: 50%;
     padding-left: 10px;
     object-fit: cover;
 }
 
-.header-nav-list{
+.header-nav-list {
     display: flex;
     padding-right: 15px;
     padding-bottom: 15px;
 }
 
-.header-nav-list a{
+.header-nav-list a {
     color: white;
     padding-right: 15px;
 }
 
-/* main */
-.mv{
+/*---------------------------------------
+taka main
+------------------------------------------- */
+.mv {
     width: 100%;
     max-width: 100%;
     height: 100vh;
@@ -64,7 +70,7 @@ header{
     position: relative;
 }
 
-.img-item{
+.img-item {
     position: absolute;
     top: 0;
     left: 0;
@@ -77,38 +83,47 @@ header{
 .img-item:nth-child(1) {
     animation-delay: 0s;
 }
+
 .img-item:nth-child(2) {
     animation-delay: 5s;
 }
+
 .img-item:nth-child(3) {
     animation-delay: 10s;
 }
+
 .img-item:nth-child(4) {
     animation-delay: 15s;
 }
 
-.img-item img{
+.img-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-@keyframes img-change{
-    0%{
+
+@keyframes img-change {
+    0% {
         opacity: 0;
     }
-    10%{
+
+    10% {
         opacity: 1;
     }
-    20%{
+
+    20% {
         opacity: 1;
     }
-    30%{
+
+    30% {
         opacity: 1;
     }
-    40%{
+
+    40% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
@@ -117,7 +132,94 @@ header{
     width: 500px;
 }
 
-/* footer */
+/*--------------------------------------
+ryotaroゾーンmain
+---------------------------------------*/
+.section-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 20px;
+}
+
+.sub-title span {
+    font-size: 30px;
+}
+
+
+/*metaleaf-feature*/
+
+.metaleaf-feature {
+
+    border: 1px solid red;
+}
+
+.feature-list {
+    border: 1px solid green;
+    margin-inline: auto;
+}
+
+.feature-item {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    border: 1px solid blue;
+}
+
+/*metaleaf-function*/
+
+.metaleaf-function {
+    border: 1px solid red;
+}
+
+.function-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid green;
+}
+
+.function-text {
+    border: 1px solid blue;
+}
+
+/*metaleaf-detail*/
+
+.metaleaf-detail {
+    border: 1px solid red;
+}
+
+.detail-list {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+}
+
+.detail-item {
+    border: 1px solid blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------
+footer 
+------------------------------------------*/
 
 footer {
     background: #f5f5f5;
