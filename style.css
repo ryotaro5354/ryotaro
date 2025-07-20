@@ -47,7 +47,7 @@ header {
 }
 
 
-.header-title img{
+.header-title img {
     max-width: 100%;
     height: 50px;
     width: 100%;
@@ -67,40 +67,41 @@ header {
 }
 
 /* main */
-main{
+main {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.metaleaf{
+.metaleaf {
     margin-top: 300px;
 }
 
-.main-title{
+.main-title {
     text-align: center;
     margin-top: 70px;
     font-size: 4rem;
 }
 
-.main-title span{
+.main-title span {
     color: green;
 }
 
-.main-info{
+.main-info {
     display: flex;
     justify-content: space-between;
     margin-top: 300px;
 }
 
-.info-title{
+.info-title {
     width: 40%;
     margin-block: auto;
     margin-left: 100px;
 }
 
-.img-item{
+.img-item {
     width: 40%;
 }
+
 .mv {
     width: 100%;
     max-width: 100%;
@@ -179,16 +180,29 @@ main{
 ryotaroゾーンmain
 ---------------------------------------*/
 .section-title {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 
 .sub-title {
-    font-size: 20px;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.sub-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
 }
 
 .sub-title span {
-    font-size: 30px;
+    font-size: 60px;
+    padding-right: 20px;
 }
 
 
@@ -207,9 +221,18 @@ ryotaroゾーンmain
 .feature-item {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
+    padding-block: 40px;
 
     border: 1px solid blue;
+}
+
+
+
+.feature-img {
+    width: 350px;
+    border-radius: 10%;
 }
 
 /*metaleaf-function*/
@@ -224,8 +247,21 @@ ryotaroゾーンmain
     border: 1px solid green;
 }
 
-.function-text {
+.function-item {
+    text-align: center;
     border: 1px solid blue;
+}
+.function-img {
+    border-radius: 10%;
+}
+
+.function-item:nth-child(1) .function-img {
+    width: 200px;
+    padding-block:30px;
+}
+.function-item:nth-child(3) .function-img {
+    width: 300px;
+    padding-block:40px;
 }
 
 /*metaleaf-detail*/
@@ -241,9 +277,18 @@ ryotaroゾーンmain
 }
 
 .detail-item {
+    text-align: center;
+    width:100%;
     border: 1px solid blue;
 }
 
+.detail-img {
+    width:300px;
+    
+}
+.detail-item:nth-child(1) .detail-img{
+    padding-block:20px;
+}
 
 
 
