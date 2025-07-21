@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 /* 共通 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 100%;
 }
@@ -15,12 +20,21 @@ a {
     text-decoration: none;
 }
 
+ul {
+    padding-left: 0;
+}
+
 li {
     list-style: none;
 }
 
+.container {
+    margin: 0 auto;
+    border: 3px solid;
+}
+
 .wrapper {
-    max-width: 1300px;
+    max-width: 1000px;
     margin: 0 auto;
     border: 2px solid;
 }
@@ -29,12 +43,10 @@ li {
 /*-------------------------------------------
 header
 --------------------------------------------- */
-header {
-    max-width: 100%;
+.header {
     width: 100%;
     height: 90px;
     background: #333;
-    align-items: center;
     position: fixed;
     z-index: 10;
     top: 0;
@@ -46,30 +58,42 @@ header {
     align-items: center;
 }
 
+.header-title {
+    line-height: 0;
+    transition: all 0.5s;
+}
+
+.header-title:hover {
+    transform: scale(1.1);
+}
 
 .header-title img {
     max-width: 100%;
-    height: 50px;
     width: 100%;
-    padding-left: 10px;
+    height: 50px;
     object-fit: cover;
+    padding-left: 10px;
 }
 
 .header-nav-list {
     display: flex;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    gap: 15px;
+
+}
+
+.header-nav-item {
+    margin-right: 15px;
+    transition: all 0.5s;
+
+}
+
+.header-nav-item:hover {
+    transform: scale(1.1);
 }
 
 .header-nav-list a {
+    width: 100%;
     color: white;
-    padding-right: 15px;
-}
-
-/* main */
-main {
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .metaleaf {
@@ -80,6 +104,7 @@ main {
     text-align: center;
     margin-top: 70px;
     font-size: 4rem;
+    /*どこ基準の４rem?*/
 }
 
 .main-title span {
@@ -172,22 +197,24 @@ main {
     }
 }
 
-.wrapper img {
-    width: 500px;
-}
 
 /*--------------------------------------
 ryotaroゾーンmain
 ---------------------------------------*/
 .section-title {
-    font-size: 40px;
     text-align: center;
+    font-size: 40px;
+    padding-top: 90px;
 }
 
 .sub-title {
+    display: inline-block;
     font-size: 30px;
     position: relative;
-    display: inline-block;
+}
+
+.sub-title span {
+    color: green;
 }
 
 .sub-title::after {
@@ -209,13 +236,11 @@ ryotaroゾーンmain
 /*metaleaf-feature*/
 
 .metaleaf-feature {
-
     border: 1px solid red;
 }
 
 .feature-list {
     border: 1px solid green;
-    margin-inline: auto;
 }
 
 .feature-item {
@@ -223,12 +248,9 @@ ryotaroゾーンmain
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding-block: 40px;
-
     border: 1px solid blue;
+    padding-block: 40px;
 }
-
-
 
 .feature-img {
     width: 350px;
@@ -251,17 +273,19 @@ ryotaroゾーンmain
     text-align: center;
     border: 1px solid blue;
 }
+
 .function-img {
     border-radius: 10%;
 }
 
 .function-item:nth-child(1) .function-img {
     width: 200px;
-    padding-block:30px;
+    padding-block: 30px;
 }
+
 .function-item:nth-child(3) .function-img {
     width: 300px;
-    padding-block:40px;
+    padding-block: 40px;
 }
 
 /*metaleaf-detail*/
@@ -278,69 +302,56 @@ ryotaroゾーンmain
 
 .detail-item {
     text-align: center;
-    width:100%;
+    width: 100%;
     border: 1px solid blue;
 }
 
 .detail-img {
-    width:300px;
+    width: 300px;
 
 }
-.detail-item:nth-child(1) .detail-img{
-    padding-block:20px;
+
+.detail-item:nth-child(1) .detail-img {
+    padding-block: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-----------------------------------------
 footer
 ------------------------------------------*/
 
-footer {
+.footer {
     background: #f5f5f5;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    padding-block: 20px;
 }
 
 .insta-sns {
-  text-align: center;
-}
-
-.insta-sns img {
-  border-radius: 50%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border: 1px solid orange;
+    margin-inline: auto;
 }
 
 .insta-link {
-    display: flex;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    transition: color 0.3s;
+    color: #000;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.insta-link img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 .insta-link:hover {
     color: #e4405f;
-
-}
-
-.insta-link img {
-    width: 24px;
-    height: 24px;
+    opacity: 0.9;
+    transform: scale(1.1);
 }
