@@ -284,7 +284,7 @@ ryotaroゾーンmain
 
 .detail-img {
     width:300px;
-    
+
 }
 .detail-item:nth-child(1) .detail-img{
     padding-block:20px;
@@ -306,7 +306,7 @@ ryotaroゾーンmain
 
 
 /*-----------------------------------------
-footer 
+footer
 ------------------------------------------*/
 
 footer {
@@ -315,6 +315,14 @@ footer {
     display: flex;
     justify-content: center;
     gap: 40px;
+}
+
+.insta-sns {
+  text-align: center;
+}
+
+.insta-sns img {
+  border-radius: 50%;
 }
 
 .insta-link {
