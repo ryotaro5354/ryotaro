@@ -94,7 +94,7 @@ header
     height: 50px;
     object-fit: cover;
     padding-left: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .header-nav-list {
@@ -145,7 +145,7 @@ header
 .main-info {
     display: flex;
     justify-content: space-between;
-    margin-top: 300px;
+    margin-top: 450px;
 }
 
 .info-title {
@@ -157,6 +157,25 @@ header
 
 .info-title p{
     font-size: 18px;
+}
+
+.scroll-svg {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+
+.arrow {
+    animation: bounceSvg 1.5s infinite;
+}
+
+@keyframes bounceSvg {
+    0%, 100% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(8px);
+    }
 }
 
 .gradient-text {
@@ -239,7 +258,82 @@ header
         opacity: 0;
     }
 }
+/* ハンバーガーメニュー */
+.menu-toggle {
+    display: none;
+    width: 70px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 20;
+    margin-right: 30px;
+}
 
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: green;
+    margin: 1px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+/* ーーーーーー */
+.header-nav {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+    }
+
+    .header-nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background: white;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 9;
+    border-top: 1px solid #ccc;
+    }
+
+    .header-nav.active {
+    display: block;
+    }
+
+    .header-nav-list {
+    flex-direction: column;
+    padding: 1rem 0;
+    }
+
+    .header-nav-item {
+    margin: 10px 0;
+    }
+
+    .header-logo {
+    flex-wrap: wrap;
+    }
+}
 
 /*--------------------------------------
 ryotaroゾーンmain
