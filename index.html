@@ -17,6 +17,12 @@
                 <a href="#header-title"><img src="img/image_2.png" alt="ヘッダーロゴ"></a>
             </h1>
 
+            <button class="menu-toggle" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <nav class="header-nav">
                 <ul class="header-nav-list">
                     <li class="header-nav-item"><a href="#feature">メタリーフとは</a></li>
@@ -48,6 +54,13 @@
 
                             <p>メタリーフはどんな場所？</p>
                             <p>そんな疑問をスクロールして見よう！！</p>
+
+                            <a href="#feature" class="scroll-svg">
+                                <svg class="arrow bounce" width="30" height="30" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 5v14M12 19l-7-7m7 7l7-7" stroke="green" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
                         </div>
 
                         <div class="mv">
@@ -183,6 +196,17 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.header-nav');
+
+            toggleButton.addEventListener('click', function () {
+                toggleButton.classList.toggle('active'); // クロスに切り替え
+                nav.classList.toggle('active'); // メニュー表示
+            });
+        });
+    </script>
 
 </body>
 
