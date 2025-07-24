@@ -32,11 +32,8 @@ ScrollReveal().reveal('.feature-text04', { delay: 150, origin: 'right' });
 
 ScrollReveal().reveal('.feature-img01', { delay: 150, origin: 'right' });
 ScrollReveal().reveal('.feature-img02', { delay: 150, origin: 'left' });
-ScrollReveal().reveal('.feature-img03', { delay: 150, origin: 'right' });
-ScrollReveal().reveal('.feature-img04', { delay: 150, origin: 'left' });
+// ScrollReveal().reveal('.feature-img03', { delay: 150, origin: 'right' });
+// ScrollReveal().reveal('.feature-img04', { delay: 150, origin: 'left' });
 
-ScrollReveal().reveal('.function-text', { delay: 150, origin: 'top' });
-ScrollReveal().reveal('.function-img', { delay: 150, origin: 'bottom' });
-
-ScrollReveal().reveal('.detail-text', { delay: 150, origin: 'top' });
-ScrollReveal().reveal('.detail-img', { delay: 150, origin: 'bottom' });
+ScrollReveal().reveal('.function-item', { delay: 150, origin: 'bottom' });
+ScrollReveal().reveal('.detail-item', { delay: 150, origin: 'bottom' });

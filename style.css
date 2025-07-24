@@ -60,9 +60,9 @@ header
     background: #333;
     background: hsla(0, 0%, 100%, .86);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .2),
-                inset 2px 3px 2px rgba(0, 0, 0, .2), 
-                inset 4px -3px 3px rgba(0, 0, 0, .2), 
-                inset -4px 0 2px rgba(0, 0, 0, .2);
+        inset 2px 3px 2px rgba(0, 0, 0, .2),
+        inset 4px -3px 3px rgba(0, 0, 0, .2),
+        inset -4px 0 2px rgba(0, 0, 0, .2);
     border-radius: 50px;
     position: fixed;
     z-index: 10;
@@ -119,7 +119,7 @@ header
     color: black;
 }
 
-.header-nav-list li{
+.header-nav-list li {
     margin-right: 50px;
 }
 
@@ -155,7 +155,7 @@ header
     font-size: 30px;
 }
 
-.info-title p{
+.info-title p {
     font-size: 18px;
 }
 
@@ -179,9 +179,12 @@ header
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, #00f, #0ff); /* 好きな色に */
-    background-clip: text;  /* 背景を文字の形に切り抜く */
-   -webkit-text-fill-color: transparent; /* 実際のテキスト色を透明にする */
+    background: linear-gradient(90deg, #00f, #0ff);
+    /* 好きな色に */
+    background-clip: text;
+    /* 背景を文字の形に切り抜く */
+    -webkit-text-fill-color: transparent;
+    /* 実際のテキスト色を透明にする */
     display: inline-block;
 }
 
@@ -387,22 +390,18 @@ ryotaroゾーンmain
 
 /*metaleaf-feature*/
 
-.metaleaf-feature {
-    /* border: 1px solid red; */
-}
+.metaleaf-feature {}
 
-.feature-list {
-    /* border: 1px solid green; */
-}
+.feature-list {}
 
 .feature-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 430px;
+    height: 450px;
     gap: 30px;
-    /* border: 1px solid blue; */
-    padding-block: 40px;
+    margin-block: 40px;
+    /* padding-block: 40px; */
 }
 
 .featurebg-1 {
@@ -434,7 +433,6 @@ ryotaroゾーンmain
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    /* border: 1px solid green; */
 }
 
 .function-item {
@@ -460,8 +458,6 @@ ryotaroゾーンmain
 /*metaleaf-detail*/
 
 .metaleaf-detail {
-    /* border: 1px solid red; */
-    /* background-image: url(./img/背景ブロック.jpg); */
     background-size: cover;
 }
 
@@ -469,7 +465,6 @@ ryotaroゾーンmain
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* border: 1px solid green; */
 }
 
 .detail-item {
@@ -504,7 +499,6 @@ footer
     justify-content: center;
     align-items: center;
     gap: 50px;
-    /* border: 1px solid orange; */
     margin-inline: auto;
 }
 
@@ -528,4 +522,67 @@ footer
     color: #e4405f;
     opacity: 0.9;
     transform: scale(1.1);
+}
+
+@media(max-width:767px) {
+
+
+
+    /*--------------------------------------------
+レスポンシブ全体
+-----------------------------------------------*/
+
+    .wrapper {
+        padding-inline: 30px;
+    }
+
+    /*--------------------------------------------
+レスポンシブheader
+-----------------------------------------------*/
+
+
+
+    /*--------------------------------------------
+レスポンシブmain
+-----------------------------------------------*/
+    .feature-item {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .feature-item:nth-child(2),
+    .feature-item:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .featurebg-1 {
+        width: 100%;
+        background-size: cover;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+            url(./img/132140-ORUEKV-700-2.jpg);
+    }
+
+    .featurebg-2 {
+        width: 100%;
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+            url(./img/132140-ORUEKV-700-2.jpg);
+        background-size: cover;
+        background-position: 100% 100%;
+    }
+
+    .function-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .detail-list {
+        flex-direction: column;
+    }
+
+    /*--------------------------------------------
+レスポンシブfooter
+-----------------------------------------------*/
 }
