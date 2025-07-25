@@ -10,8 +10,10 @@ $(function () {
         let position = target.offset().top;
         $("html, body").animate({ scrollTop: position }, 400, "swing");
         return false;
+        
     });
 });
+
 
 
 ScrollReveal({
