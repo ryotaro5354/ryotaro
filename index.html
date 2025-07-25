@@ -14,7 +14,7 @@
     <header class="header container">
         <div class="header-logo">
             <h1 class="header-title">
-                <a href="#header-title"><img src="img/image_2.png" alt="ヘッダーロゴ"></a>
+                <a href="#header-title"><img src="img/IMG_1203.背景なしpng.png" alt="ヘッダーロゴ"></a>
             </h1>
 
             <button class="menu-toggle" aria-label="メニューを開く">
@@ -45,7 +45,7 @@
             <div class="wrapper">
                 <section class="metaleaf">
                     <h2 class="main-title">Meta<span>Leaf</span>
-                        <br>メタリーフの世界へようこそ
+                        <br>メタリーフの世界へ<br>ようこそ
                     </h2>
 
                     <div class="main-info">
@@ -200,10 +200,19 @@
         document.addEventListener('DOMContentLoaded', function () {
             const toggleButton = document.querySelector('.menu-toggle');
             const nav = document.querySelector('.header-nav');
+            const navLinks = document.querySelectorAll('.header-nav a'); // ナビ内のリンクを取得
 
             toggleButton.addEventListener('click', function () {
-                toggleButton.classList.toggle('active'); // クロスに切り替え
-                nav.classList.toggle('active'); // メニュー表示
+                toggleButton.classList.toggle('active'); // ハンバーガー切り替え
+                nav.classList.toggle('active');          // メニュー表示/非表示
+            });
+
+            // 各リンククリックでメニューを閉じる
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    toggleButton.classList.remove('active');
+                    nav.classList.remove('active');
+                });
             });
         });
     </script>
