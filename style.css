@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /* 共通 */
-body {
+html, body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -29,7 +30,6 @@ li {
 }
 
 .container {
-    /* border: 3px solid; */
     margin: 0 auto;
 }
 
@@ -37,7 +37,6 @@ li {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    /* border: 2px solid; */
 }
 
 .bg-img {
@@ -264,7 +263,7 @@ header
 /* ハンバーガーメニュー */
 .menu-toggle {
     display: none;
-    width: 70px;
+    width: 40px;
     height: 30px;
     position: relative;
     cursor: pointer;
@@ -275,18 +274,30 @@ header
 }
 
 .menu-toggle span {
-    display: block;
+    position: absolute;
+    left: 0;
     width: 100%;
-    height: 5px;
+    height: 4px;
     background: green;
-    margin: 1px 0;
-    border-radius: 8px;
+    border-radius: 4px;
     transition: all 0.3s ease;
-    transform-origin: center;
+}
+
+.menu-toggle span:nth-child(1) {
+    top: 0;
+}
+
+.menu-toggle span:nth-child(2) {
+    top: 13px;
+}
+
+.menu-toggle span:nth-child(3) {
+    top: 26px;
 }
 
 .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
+    transform: rotate(45deg);
+    top: 13px;
 }
 
 .menu-toggle.active span:nth-child(2) {
@@ -294,14 +305,15 @@ header
 }
 
 .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
+    transform: rotate(-45deg);
+    top: 13px;
 }
 /* ーーーーーー */
 .header-nav {
     display: block;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .menu-toggle {
     display: block;
     margin-left: auto;
@@ -336,6 +348,8 @@ header
     .header-logo {
     flex-wrap: wrap;
     }
+
+    
 }
 
 /*--------------------------------------
