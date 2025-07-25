@@ -2,7 +2,8 @@
 
 /* 共通 */
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -171,11 +172,14 @@ header
 }
 
 @keyframes bounceSvg {
-    0%, 100% {
-    transform: translateY(0);
+
+    0%,
+    100% {
+        transform: translateY(0);
     }
+
     50% {
-    transform: translateY(8px);
+        transform: translateY(8px);
     }
 }
 
@@ -262,6 +266,7 @@ header
         opacity: 0;
     }
 }
+
 /* ハンバーガーメニュー */
 .menu-toggle {
     display: none;
@@ -310,6 +315,7 @@ header
     transform: rotate(-45deg);
     top: 13px;
 }
+
 /* ーーーーーー */
 .header-nav {
     display: block;
@@ -317,53 +323,52 @@ header
 
 @media screen and (max-width: 767px) {
     .menu-toggle {
-    display: block;
-    margin-left: auto;
-    padding: 10px;
+        display: block;
+        margin-left: auto;
+        padding: 10px;
     }
 
     .header-nav {
-    display: none;
-    width: 100%;
-    text-align: center;
-    background: white;
-    position: absolute;
-    top: 90px;
-    left: 0;
-    z-index: 9;
-    border-top: 1px solid #ccc;
+        display: none;
+        width: 100%;
+        text-align: center;
+        background: white;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        z-index: 9;
+        border-top: 1px solid #ccc;
     }
 
     .header-nav.active {
-    display: block;
+        display: block;
     }
 
     .header-nav-list {
-    flex-direction: column;
-    padding: 1rem 0;
+        flex-direction: column;
+        padding: 1rem 0;
     }
 
     .header-nav-item {
-    margin: 10px 0;
+        margin: 10px 0;
     }
 
     .header-logo {
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
-    
+
 }
 
 /*--------------------------------------
 ryotaroゾーンmain
 ---------------------------------------*/
 
-
 .section-title {
     display: inline-block;
     text-align: center;
     font-size: 40px;
-    padding-top: 90px;
+    padding-top: 100px;
     position: relative;
 }
 
@@ -406,10 +411,6 @@ ryotaroゾーンmain
 
 /*metaleaf-feature*/
 
-.metaleaf-feature {}
-
-.feature-list {}
-
 .feature-item {
     display: flex;
     justify-content: center;
@@ -417,14 +418,13 @@ ryotaroゾーンmain
     height: 450px;
     gap: 30px;
     margin-block: 40px;
-    /* padding-block: 40px; */
 }
 
 .featurebg-1 {
-    background-size: cover;
-    background-position: 100% 100%;
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5)),
         url(./img/背景ブロック.jpg);
+    background-size: cover;
+    background-position: 100% 100%;
 }
 
 .featurebg-2 {
@@ -440,10 +440,6 @@ ryotaroゾーンmain
 }
 
 /*metaleaf-function*/
-
-.metaleaf-function {
-    /* border: 1px solid red; */
-}
 
 .function-list {
     display: grid;
@@ -473,10 +469,6 @@ ryotaroゾーンmain
 
 /*metaleaf-detail*/
 
-.metaleaf-detail {
-    background-size: cover;
-}
-
 .detail-list {
     display: flex;
     justify-content: center;
@@ -488,16 +480,17 @@ ryotaroゾーンmain
     width: 100%;
     border: 4px solid rgb(49, 144, 49);
     border-radius: 15%;
+    /* padding-inline:10px; */
+    /* ここの挙動調節　要 */
 
 }
 
 .detail-img {
     width: 300px;
-
-}
-
-.detail-item:nth-child(1) .detail-img {
+    max-width: 100%;
     padding-block: 20px;
+
+
 }
 
 /*-----------------------------------------
@@ -540,16 +533,15 @@ footer
     transform: scale(1.1);
 }
 
+
+
+/*--------------------------------------------
+レスポンシブ
+-----------------------------------------------*/
 @media(max-width:767px) {
 
-
-
-    /*--------------------------------------------
-レスポンシブ全体
------------------------------------------------*/
-
     .wrapper {
-        padding-inline: 30px;
+        padding-inline: 20px;
     }
 
     /*--------------------------------------------
@@ -561,14 +553,36 @@ footer
     /*--------------------------------------------
 レスポンシブmain
 -----------------------------------------------*/
+    .section-title {
+        font-size: 30px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .sub-title span {
+        font-size: 30px;
+    }
+
+    .feature-text p {
+        font-size: 12px;
+        margin-block: 0;
+    }
+
     .feature-item {
         flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
         height: 600px;
     }
+
+
 
     .feature-item:nth-child(2),
     .feature-item:nth-child(4) {
         flex-direction: column-reverse;
+        justify-content: flex-end
     }
 
     .featurebg-1 {
@@ -594,8 +608,29 @@ footer
         gap: 10px;
     }
 
+    .function-item {
+        padding: 15px 10px 10px;
+        margin-block: 0;
+    }
+
+    .function-text {
+        font-size: 13px;
+    }
+
+    .function-item:nth-child(1) .function-img {
+        padding-block: 0;
+    }
+
+    .function-item:nth-child(3) .function-img {
+        padding-block: 0;
+    }
+
     .detail-list {
         flex-direction: column;
+    }
+
+    .detail-text {
+        font-size: 13px;
     }
 
     /*--------------------------------------------
