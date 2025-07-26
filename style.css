@@ -40,6 +40,7 @@ li {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding-inline: 3%;
 }
 
 /* takaゾーン */
@@ -438,13 +439,15 @@ ryotaroゾーンmain
     gap: 20px;
 }
 
+
 .detail-item {
+    padding-inline: 10px;
     text-align: center;
     width: 100%;
     border: 4px solid rgb(49, 144, 49);
     border-radius: 15%;
-    /* padding-inline:10px; */
-    /* ここの挙動調節　要 */
+    box-sizing: border-box;
+    /* ここの挙動調節できた！　これ最初からないの。。 */
 
 }
 
@@ -502,10 +505,6 @@ footer
 レスポンシブ
 -----------------------------------------------*/
 @media(max-width:767px) {
-
-    .wrapper {
-        padding-inline: 20px;
-    }
 
     /*--------------------------------------------
 レスポンシブheader
