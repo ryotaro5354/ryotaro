@@ -478,7 +478,7 @@ footer
 }
 
 .insta-link {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -499,7 +499,18 @@ footer
     transform: scale(1.1);
 }
 
+.footer-logo {
+    text-align: center;
+}
 
+.footer-logo img {
+  max-width: 150px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+}
 
 /*--------------------------------------------
 レスポンシブ
@@ -697,4 +708,8 @@ footer
     /*--------------------------------------------
 レスポンシブfooter
 -----------------------------------------------*/
+
+.insta-sns {
+  flex-direction: column;
+}
 }
