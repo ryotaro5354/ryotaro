@@ -404,6 +404,10 @@ ryotaroゾーンmain
     border-radius: 10%;
 }
 
+.feature-text {
+    text-align: center;
+}
+
 /*metaleaf-function*/
 
 .function-list {
@@ -501,12 +505,12 @@ footer
 }
 
 .footer-logo img {
-  max-width: 150px;
+    max-width: 150px;
 }
 
 footer p {
-  text-align: center;
-  font-size: 12px;
+    text-align: center;
+    font-size: 12px;
 }
 
 /*--------------------------------------------
@@ -707,8 +711,8 @@ footer p {
 レスポンシブfooter
 -----------------------------------------------*/
 
-.insta-sns {
-  flex-direction: column;
-}
+    .insta-sns {
+        flex-direction: column;
+    }
 
 }
