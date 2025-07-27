@@ -325,7 +325,7 @@ header
 
 
 /*--------------------------------------
-ryotaroゾーンmain
+main
 ---------------------------------------*/
 
 .section-title {
@@ -646,11 +646,8 @@ footer p {
     .feature-item {
         flex-direction: column;
         justify-content: flex-start;
-        text-align: left;
         height: 600px;
     }
-
-
 
     .feature-item:nth-child(2),
     .feature-item:nth-child(4) {
@@ -661,8 +658,6 @@ footer p {
     .featurebg-1 {
         width: 100%;
         background-size: cover;
-        overflow: hidden;
-        background-repeat: no-repeat;
         background-position: 100% 100%;
         background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
             url(./img/132140-ORUEKV-700-2.jpg);
