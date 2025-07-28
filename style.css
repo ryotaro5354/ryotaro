@@ -40,6 +40,7 @@ li {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding-inline: 3%;
 }
 
 /* takaゾーン */
@@ -326,7 +327,7 @@ header
 
 
 /*--------------------------------------
-ryotaroゾーンmain
+main
 ---------------------------------------*/
 
 .section-title {
@@ -352,6 +353,7 @@ ryotaroゾーンmain
     display: inline-block;
     font-size: 30px;
     position: relative;
+
 }
 
 .sub-title span {
@@ -404,6 +406,10 @@ ryotaroゾーンmain
     border-radius: 10%;
 }
 
+.feature-text {
+    text-align: center;
+}
+
 /*metaleaf-function*/
 
 .function-list {
@@ -440,22 +446,20 @@ ryotaroゾーンmain
     gap: 20px;
 }
 
+
 .detail-item {
+    padding-inline: 10px;
     text-align: center;
     width: 100%;
     border: 4px solid rgb(49, 144, 49);
     border-radius: 15%;
-    /* padding-inline:10px; */
-    /* ここの挙動調節　要 */
-
+    box-sizing: border-box;
 }
 
 .detail-img {
     width: 300px;
     max-width: 100%;
     padding-block: 20px;
-
-
 }
 
 /*-----------------------------------------
@@ -477,7 +481,7 @@ footer
 }
 
 .insta-link {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -498,21 +502,28 @@ footer
     transform: scale(1.1);
 }
 
+.footer-logo {
+    text-align: center;
+}
 
+.footer-logo img {
+    max-width: 150px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
 
 /*--------------------------------------------
 レスポンシブ
 -----------------------------------------------*/
 @media(max-width:767px) {
 
-    .wrapper {
-        padding-inline: 20px;
-    }
-
     /*--------------------------------------------
 レスポンシブheader
 -----------------------------------------------*/
-    .header{
+    .header {
         margin-top: 0;
     }
 
@@ -521,97 +532,97 @@ footer
     }
 
     .menu-toggle {
-    display: block;
-    margin-left: auto;
-    padding: 10px;
+        display: block;
+        margin-left: auto;
+        padding: 10px;
     }
 
     .header-nav {
-    display: none;
-    width: 100%;
-    text-align: center;
-    background: white;
-    position: absolute;
-    top: 90px;
-    left: 0;
-    z-index: 9;
-    border-top: 1px solid #ccc;
+        display: none;
+        width: 100%;
+        text-align: center;
+        background: white;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        z-index: 9;
+        border-top: 1px solid #ccc;
     }
 
     .header-nav.active {
-    display: block;
+        display: block;
     }
 
     .header-nav-list {
-    flex-direction: column;
-    padding: 1rem 0;
-    margin-left: 10%;
+        flex-direction: column;
+        padding: 1rem 0;
+        margin-left: 10%;
     }
 
     .header-nav-item {
-    margin: 10px 0;
+        margin: 10px 0;
     }
 
     .header-logo {
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 
     .main-info {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
     }
 
     .info-title {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 22px;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 22px;
     }
 
     .info-title h2 {
-    font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 
     .info-title p {
-    font-size: 0.8rem;
-    line-height: 1.6;
+        font-size: 16px;
+        line-height: 1.6;
     }
 
     .scroll-svg {
-    margin-top: 30px;
+        margin-top: 30px;
     }
 
     .mv {
-    width: 100%;
-    height: 280px;
-    max-width: 90%;
-    margin: 40px auto 0;
-    position: relative;
+        width: 100%;
+        height: 280px;
+        max-width: 90%;
+        margin: 40px auto 0;
+        position: relative;
     }
 
     .img-item {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .img-item img {
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-    object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        object-fit: cover;
     }
 
     .main-title {
-    font-size: 1.8rem;
-    margin-top: 50px;
+        font-size: 1.8rem;
+        margin-top: 50px;
     }
 
     .metaleaf {
-    margin-top: 150px;
+        margin-top: 150px;
     }
 
 
@@ -638,11 +649,8 @@ footer
     .feature-item {
         flex-direction: column;
         justify-content: flex-start;
-        text-align: left;
         height: 600px;
     }
-
-
 
     .feature-item:nth-child(2),
     .feature-item:nth-child(4) {
@@ -653,8 +661,6 @@ footer
     .featurebg-1 {
         width: 100%;
         background-size: cover;
-        overflow: hidden;
-        background-repeat: no-repeat;
         background-position: 100% 100%;
         background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
             url(./img/132140-ORUEKV-700-2.jpg);
@@ -674,6 +680,7 @@ footer
     }
 
     .function-item {
+        height: 330px;
         padding: 15px 10px 10px;
         margin-block: 0;
     }
@@ -683,11 +690,11 @@ footer
     }
 
     .function-item:nth-child(1) .function-img {
-        padding-block: 0;
+        padding-block: 20px;
     }
 
     .function-item:nth-child(3) .function-img {
-        padding-block: 0;
+        padding-block: 40px 10px;
     }
 
     .detail-list {
@@ -701,4 +708,9 @@ footer
     /*--------------------------------------------
 レスポンシブfooter
 -----------------------------------------------*/
+
+    .insta-sns {
+        flex-direction: column;
+    }
+
 }
