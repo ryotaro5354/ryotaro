@@ -128,10 +128,6 @@ header
     margin-right: 50px;
 }
 
-.header-nav-item:nth-child(4) {
-    padding-top: 6px;
-}
-
 .header-nav-item a:hover {
     color: green;
 }
@@ -512,8 +508,8 @@ footer
 
 .footer-logo img {
     max-width: 150px;
-    margin-top: 30px;
-
+    margin-top:30px;
+    
 
 }
 
@@ -532,6 +528,12 @@ footer p {
 -----------------------------------------------*/
     .header {
         margin-top: 0;
+        height: 70px;
+        top: 5;
+    }
+
+    .header-title img{
+        height: 34px;
     }
 
     .bg-img {
