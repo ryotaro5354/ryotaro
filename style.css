@@ -110,8 +110,9 @@ header
 .header-nav-item {
     margin-right: 15px;
     transition: all 0.5s;
-
 }
+
+
 
 .header-nav-item:hover {
     transform: scale(1.1);
@@ -126,6 +127,10 @@ header
 
 .header-nav-list li {
     margin-right: 50px;
+}
+
+.header-nav-item:nth-child(4){
+    padding-top: 6px;
 }
 
 .header-nav-item a:hover {
