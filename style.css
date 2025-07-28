@@ -104,6 +104,7 @@ header
 .header-nav-list {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .header-nav-item {
@@ -120,6 +121,7 @@ header
 .header-nav-list a {
     width: 100%;
     color: black;
+    font-size: 18px;
 }
 
 .header-nav-list li {
@@ -137,8 +139,7 @@ header
 .main-title {
     text-align: center;
     margin-top: 70px;
-    font-size: 4rem;
-    /*どこ基準の４rem?*/
+    font-size: 80px;
 }
 
 .main-title span {
@@ -219,6 +220,7 @@ header
     opacity: 0;
 }
 
+/* 画像切り替え秒数 */
 .img-item:nth-child(1) {
     animation-delay: 0s;
 }
@@ -554,6 +556,7 @@ footer p {
     .header-nav-list {
         flex-direction: column;
         padding: 1rem 0;
+        margin-left: 10%;
     }
 
     .header-nav-item {
