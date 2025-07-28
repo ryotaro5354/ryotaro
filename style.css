@@ -655,15 +655,15 @@ footer p {
     .feature-item:nth-child(2),
     .feature-item:nth-child(4) {
         flex-direction: column-reverse;
-        justify-content: flex-end
+        justify-content: flex-end;
     }
 
     .featurebg-1 {
         width: 100%;
-        background-size: cover;
-        background-position: 100% 100%;
         background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
             url(./img/132140-ORUEKV-700-2.jpg);
+        background-size: cover;
+        background-position: 100% 100%;
     }
 
     .featurebg-2 {
