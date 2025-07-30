@@ -468,7 +468,7 @@ footer
 
 .footer {
     background: #f5f5f5;
-    padding-block: 20px;
+    padding-block: 20px 10px;
 }
 
 .insta-sns {
@@ -523,6 +523,7 @@ footer
 footer p {
     text-align: center;
     font-size: 12px;
+    margin-block: 10px 0;
 }
 
 /*--------------------------------------------
@@ -607,7 +608,7 @@ footer p {
     }
 
     .info-title p {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.6;
     }
 
@@ -738,6 +739,7 @@ footer p {
 
     .insta-sns {
         flex-direction: column;
+        gap: 25px;
     }
 
 }
